@@ -60,4 +60,9 @@ public class PaymentController {
     public String getPaymentById() {
          return  serverPort;
     }
+    @GetMapping("/payment/zipkin")
+    public String paymentZipkin()
+    {
+        return "hiO哈哈~";
+    }
 }
