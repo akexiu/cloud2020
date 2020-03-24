@@ -1,4 +1,4 @@
-package com.atguigu.springcloud.alibaba.service;
+package com.akexiu.springcloud.alibaba.service;
 
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;

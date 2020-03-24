@@ -1,7 +1,7 @@
 package com.akexiu.springcloud.alibaba.controller;
 
-import com.atguigu.springcloud.alibaba.domain.CommonResult ;
-import com.atguigu.springcloud.alibaba.service.AccountService ;
+import com.akexiu.springcloud.alibaba.domain.CommonResult ;
+import com.akexiu.springcloud.alibaba.service.AccountService ;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

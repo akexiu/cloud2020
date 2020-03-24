@@ -1,4 +1,4 @@
-package com.atguigu.springcloud.alibaba;
+package com.akexiu.springcloud.alibaba;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,7 +7,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
- * @auther zzyy
+ * @auther akexiu
  * @create 2019-12-13 21:59
  */
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)

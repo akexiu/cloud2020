@@ -1,0 +1,49 @@
+
+windows下安装consul
+Consul 是一个支持多数据中心分布式高可用的服务发现和配置共享的服务软件, 由 HashiCorp 公司用 Go 语言开发, 基于 Mozilla Public License 2.0 的协议进行开源。
+
+下载
+官网下载：https://www.consul.io/downloads.html
+
+
+
+在安装的位置解压得到 consul.exe 文件（我的解压位置是：E:\consul）
+
+环境变量
+增加一条E:\consul
+
+
+
+启动
+cmd 命令窗口执行：consul agent -dev
+
+consul 自带 UI 界面，打开网址：http://localhost:8500 ，可以看到当前注册的服务界面
+
+cmd 命令窗口执行:consul.exe agent -server ui -bootstrap -client 0.0.0.0 -data-dir="E:\consul" -bind X.X.X.X
+
+
+linux安装consul
+
+
+.解压consul_0.7.5_linux_amd64.zip
+unzip consul_0.7.5_linux_amd64.zip
+解决办法-bash: unzip: 未找到命令如果解压出现该错误
+yum -y install unzip
+./consul 看到如下界面说明安装成功
+./consul agent -dev -ui -node=consul-dev -client=192.168.79.128
+
+其中X.X.X.X为服务器ip,即可使用http://X.X.X.X:8500 访问ui而不是只能使用localhost连接
+
+
+
+#!/bin/bash
+/home/akexiu/soft/consul agent -server -node=192.168.79.128-data-dir=/usr/local/consul/data/ -config-dir=/usr/local/consul/config/ -log-file=/usr/local/consul/log/consul_log-$(date +%Y-%m-%d--%H-%M) -bind=192.168.79.128-join=192.168.79.128
+
+
+
+
+
+
+
+
+
